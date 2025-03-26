@@ -1,40 +1,60 @@
 # Newari Food Detection using ResNet50, YOLOv8, and Hybrid Models
 
 📌 Project Overview
-
 This project implements and compares three different models for detecting and classifying 16 types of traditional Newari food items from images:
 
-YOLOv8-only – Real-time object detection.
+✅ YOLOv8-only – Real-time object detection.
 
-ResNet50-only – High-accuracy food classification.
+✅ ResNet50-only – High-accuracy food classification.
 
-Hybrid (YOLOv8 + ResNet50) – Combines the speed of YOLO with the accuracy of ResNet for improved results, especially in complex or overlapping food scenes.
+✅ Hybrid (YOLOv8 + ResNet50) – Combines YOLO's speed with ResNet's accuracy for improved results, especially in overlapping or complex food scenes.
 
 🧠 Objective
+🍽 Detect multiple food items in a single image.
 
-Detect multiple food items in an image.
+🍛 Accurately classify food categories: e.g., Yomari, Bara, Chatamari, Achar, etc.
 
-Accurately classify food categories: e.g., Yomari, Bara, Chatamari, Achar, etc.
+📊 Evaluate models using:
 
-Evaluate and compare models using standard metrics: Precision, Recall, F1-score, mAP, and IoU.
+Precision
 
-Handle challenges like overlapping objects, small food items, and similar-looking dishes.
+Recall
+
+F1-score
+
+mAP
+
+IoU
+
+🧩 Handle challenges like:
+
+Overlapping objects
+
+Small food items
+
+Visually similar categories
 
 🧱 Model Architectures
-
 🔹 YOLOv8-only (Object Detection)
-Fast and efficient object detection in a single forward pass.
+⚡ Fast & efficient object detection in a single forward pass.
 
-Performs well in localizing objects but struggles with fine-grained classification in overlapping objects.
+📍 Great for localization, but struggles with fine-grained classification in overlapping scenes.
 
 🔹 ResNet50-only (Image Classification)
-Deep CNN trained to classify an entire image into one food category.
+🧠 Deep CNN trained to classify the entire image into one food category.
 
-Excels in identifying subtle differences between food items but lacks localization.
+🧬 Excels at identifying subtle differences between dishes, but cannot localize objects (no bounding boxes).
 
-🔹 Hybrid (ResNet50 + YOLOv8)
-ResNet50: Used as a high-level feature extractor or classifier to guide YOLO.
+🔹 Hybrid (YOLOv8 + ResNet50)
+🧩 ResNet50: High-level feature extractor or classifier.
 
-YOLOv8: Performs object localization, with added context from ResNet to handle overlapping or ambiguous scenes.
+📦 YOLOv8: Object localization.
 
-Best performance for real-world complex food images.
+🤝 Works together to:
+
+Reduce false positives
+
+Improve detection in overlapping scenes
+
+Achieve best overall accuracy
+
