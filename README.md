@@ -1,6 +1,7 @@
-### Newari Food Detection using ResNet50, YOLOv8, and Hybrid Models
+# Newari Food Detection using ResNet50, YOLOv8, and Hybrid Models
 
 📌 Project Overview
+
 This project implements and compares three different models for detecting and classifying 16 types of traditional Newari food items from images:
 
 YOLOv8-only – Real-time object detection.
@@ -10,6 +11,7 @@ ResNet50-only – High-accuracy food classification.
 Hybrid (YOLOv8 + ResNet50) – Combines the speed of YOLO with the accuracy of ResNet for improved results, especially in complex or overlapping food scenes.
 
 🧠 Objective
+
 Detect multiple food items in an image.
 
 Accurately classify food categories: e.g., Yomari, Bara, Chatamari, Achar, etc.
@@ -19,6 +21,7 @@ Evaluate and compare models using standard metrics: Precision, Recall, F1-score,
 Handle challenges like overlapping objects, small food items, and similar-looking dishes.
 
 🧱 Model Architectures
+
 🔹 YOLOv8-only (Object Detection)
 Fast and efficient object detection in a single forward pass.
 
